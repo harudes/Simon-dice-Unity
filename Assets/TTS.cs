@@ -21,7 +21,6 @@ public class TTS : MonoBehaviour
         yield return www.SendWebRequest();
         _audio.clip = DownloadHandlerAudioClip.GetContent(www);
         _audio.Play();
-        
     }
 
     void Start()
